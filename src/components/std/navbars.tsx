@@ -10,11 +10,10 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link to="/">Eng Basics</Link>
+          {/*<Link to="/">Eng Basics</Link>*/}
 
           {/* Desktop Menu */}
           <div className="hidden items-center gap-8 md:flex">
-            <Link to="/meche">MechE</Link>
             <Link to="/home" className="transition hover:text-blue-600">
               Home
             </Link>
@@ -124,13 +123,16 @@ export default function Navbar() {
           }`}
         >
           <div className="flex flex-col gap-2 pt-2">
-            <a href="/home" className="rounded-lg px-3 py-2 hover:bg-gray-100">
+            <Link to="/home" className="rounded-lg px-3 py-2 hover:bg-gray-100">
               Home
-            </a>
+            </Link>
 
-            <a href="/about" className="rounded-lg px-3 py-2 hover:bg-gray-100">
+            <Link
+              to="/about"
+              className="rounded-lg px-3 py-2 hover:bg-gray-100"
+            >
               About
-            </a>
+            </Link>
 
             {/* Mobile Services */}
             <details className="group">
@@ -152,43 +154,40 @@ export default function Navbar() {
               </summary>
 
               <div className="ml-4 mt-2 flex flex-col">
-                <a
-                  href="/meche"
+                <Link
+                  to="/meche"
                   className="rounded-lg px-3 py-2 hover:bg-gray-100"
                 >
                   Mechanical Engineering
-                </a>
+                </Link>
 
-                <a
-                  href="/cive"
+                <Link
+                  to="/cive"
                   className="rounded-lg px-3 py-2 hover:bg-gray-100"
                 >
                   Civil Engineering
-                </a>
-
-                <a
-                  href="/chem"
+                </Link>
+                <Link
+                  to="/chem"
                   className="rounded-lg px-3 py-2 hover:bg-gray-100"
                 >
                   Chemical Engineering
-                </a>
-
-                <a
-                  href="/ele"
+                </Link>
+                <Link
+                  to="/ele"
                   className="rounded-lg px-3 py-2 hover:bg-gray-100"
                 >
                   Electrical Engineering
-                </a>
+                </Link>
               </div>
             </details>
 
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="rounded-lg px-3 py-2 hover:bg-gray-100"
             >
-              Tools
-            </a>
-
+              Contact
+            </Link>
             <button className="mt-2 rounded-lg bg-black px-4 py-3 text-white">
               Get Started
             </button>

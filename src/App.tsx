@@ -7,7 +7,7 @@ import Contact from "./components/Pages/contact";
 import NavBars from "./components/std/navbars";
 import Footer from "./components/std/footer";
 import Accordion from "./components/ui/accordion";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import MechE from "./components/Pages/meche";
 
 // This App.tsx is the main hub for the website: routes, layout, and state. links everything on the website together
