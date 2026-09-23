@@ -32,5 +32,11 @@ function App() {
     </Router>
   );
 }
+console.log(
+  "BASE_URL:",
+  import.meta.env.BASE_URL,
+  "URL:",
+  window.location.href,
+);
 
 export default App;

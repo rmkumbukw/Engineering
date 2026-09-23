@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          {/*<Link to="/">Eng Basics</Link>*/}
+          <Link to="/">Eng Basics</Link>
 
           {/* Desktop Menu */}
           <div className="hidden items-center gap-8 md:flex">
