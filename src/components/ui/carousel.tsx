@@ -2,11 +2,11 @@
 import { useState } from "react";
 
 const slides = [
-  "src/assets/drawings.jpg",
-  "src/assets/Engine.jpg",
-  "src/assets/engine2.jpg",
-  "src/assets/gears.jpg",
-  "src/assets/drawings.jpg",
+  "../../assets/drawings.jpg",
+  "../../assets/Engine.jpg",
+  "../../assets/engine2.jpg",
+  "../../assets/gears.jpg",
+  "../../assets/drawings.jpg",
 ];
 
 export default function Carousel() {
