@@ -13,7 +13,7 @@ import MechE from "./components/Pages/meche";
 // This App.tsx is the main hub for the website: routes, layout, and state. links everything on the website together
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <NavBars />
       <Routes>
         <Route path="/home" element={<Home />} />

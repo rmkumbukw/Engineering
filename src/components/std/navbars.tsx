@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -9,19 +10,18 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a href="/" className="text-xl font-bold tracking-tight">
-            Eng Basics
-          </a>
+          <Link to="/">Eng Basics</Link>
 
           {/* Desktop Menu */}
           <div className="hidden items-center gap-8 md:flex">
-            <a href="/home" className="transition hover:text-blue-600">
+            <Link to="/meche">MechE</Link>
+            <Link to="/home" className="transition hover:text-blue-600">
               Home
-            </a>
+            </Link>
 
-            <a href="/about" className="transition hover:text-blue-600">
+            <Link to="/about" className="transition hover:text-blue-600">
               About
-            </a>
+            </Link>
 
             {/* Desktop Dropdown */}
             <div
@@ -50,31 +50,36 @@ export default function Navbar() {
 
               {servicesOpen && (
                 <div className="absolute left-0 top-full w-56 rounded-xl border bg-white py-2 shadow-lg">
-                  <a
-                    href="/meche"
+                  <Link
+                    to="/meche"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
                     Mechanical Engineering
-                  </a>
+                  </Link>
 
-                  <a href="/cive" className="block px-4 py-2 hover:bg-gray-100">
+                  <Link
+                    to="/cive"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
                     Civil Engineering
-                  </a>
-
-                  <a href="/chem" className="block px-4 py-2 hover:bg-gray-100">
+                  </Link>
+                  <Link
+                    to="/chem"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
                     Chemical Engineering
-                  </a>
+                  </Link>
 
-                  <a href="/ele" className="block px-4 py-2 hover:bg-gray-100">
+                  <Link to="/ele" className="block px-4 py-2 hover:bg-gray-100">
                     Electrical Engineering
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
 
-            <a href="/tools" className="transition hover:text-blue-600">
+            <Link to="/tools" className="transition hover:text-blue-600">
               Tools
-            </a>
+            </Link>
 
             <button className="rounded-lg bg-black px-4 py-2 text-white transition hover:bg-zinc-800">
               Get Started
