@@ -1,4 +1,4 @@
-function NavBar() {
+/*function NavBar() {
   return (
     <nav className="flex item-center justify-between  p-4 bg-zinc-300">
       <h1 className="text-xl font-bold">Eng Basics</h1>
@@ -13,4 +13,4 @@ function NavBar() {
     </nav>
   );
 }
-export default NavBar;
+export default NavBar;*/

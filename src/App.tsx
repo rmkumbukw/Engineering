@@ -7,7 +7,12 @@ import Contact from "./components/Pages/contact";
 import NavBars from "./components/std/navbars";
 import Footer from "./components/std/footer";
 import Accordion from "./components/ui/accordion";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import MechE from "./components/Pages/meche";
 import ElE from "./components/Pages/ele";
 import ChemE from "./components/Pages/cheme";
@@ -15,9 +20,10 @@ import ChemE from "./components/Pages/cheme";
 // This App.tsx is the main hub for the website: routes, layout, and state. links everything on the website together
 function App() {
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router>
       <NavBars />
       <Routes>
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/topics" element={<Topics />} />
@@ -26,6 +32,7 @@ function App() {
         <Route path="/meche" element={<MechE />} />
         <Route path="/ele" element={<ElE />} />
         <Route path="/cheme" element={<ChemE />} />
+        <Route path="*" element={<Home />} />
       </Routes>
       <Accordion />
       <Footer />
