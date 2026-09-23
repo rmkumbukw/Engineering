@@ -32,6 +32,7 @@ function App() {
         <Route path="/meche" element={<MechE />} />
         <Route path="/ele" element={<ElE />} />
         <Route path="/cheme" element={<ChemE />} />
+        {/* if routes dont exist brings them home */}
         <Route path="*" element={<Home />} />
       </Routes>
       <Accordion />

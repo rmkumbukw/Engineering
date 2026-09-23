@@ -1,6 +1,6 @@
 import Card from "../ui/card";
 import Carousel from "../ui/carousel";
-import Drawings from "../imgs/drawings.jpg";
+import Drawings from "../../assets/drawings.jpg";
 
 function Home() {
   return (
