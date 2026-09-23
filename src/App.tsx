@@ -9,6 +9,8 @@ import Footer from "./components/std/footer";
 import Accordion from "./components/ui/accordion";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import MechE from "./components/Pages/meche";
+import ElE from "./components/Pages/ele";
+import ChemE from "./components/Pages/cheme";
 
 // This App.tsx is the main hub for the website: routes, layout, and state. links everything on the website together
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route path="/streams" element={<Streams />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/meche" element={<MechE />} />
+        <Route path="/ele" element={<ElE />} />
+        <Route path="/cheme" element={<ChemE />} />
       </Routes>
       <Accordion />
       <Footer />

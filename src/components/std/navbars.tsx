@@ -63,7 +63,7 @@ export default function Navbar() {
                     Civil Engineering
                   </Link>
                   <Link
-                    to="/chem"
+                    to="/cheme"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
                     Chemical Engineering
@@ -168,7 +168,7 @@ export default function Navbar() {
                   Civil Engineering
                 </Link>
                 <Link
-                  to="/chem"
+                  to="/cheme"
                   className="rounded-lg px-3 py-2 hover:bg-gray-100"
                 >
                   Chemical Engineering
