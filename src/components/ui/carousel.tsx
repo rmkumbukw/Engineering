@@ -1,12 +1,33 @@
 // Carousel.tsx
 import { useState } from "react";
+import Engine from "../../assets/Engine.jpg";
+import Engine2 from "../../assets/engine2.jpg";
+import cad from "../../assets/cad.jpg";
+import bridge from "../../assets/bridge.jpg";
+import chem_plant from "../../assets/chem_plant.jpg";
+import road from "../../assets/road.jpg";
+import Robot from "../../assets/robot.jpg";
+import train from "../../assets/train.jpg";
+import rocket from "../../assets/rocket.jpg";
+import networks from "../../assets/networks.jpg";
+import tunnel from "../../assets/tunnel.jpg";
+import motor from "../../assets/motor.jpg";
+import mechatronics from "../../assets/mechatronics.jpg";
 
 const slides = [
-  "../../assets/drawings.jpg",
-  "../../assets/Engine.jpg",
-  "../../assets/engine2.jpg",
-  "../../assets/gears.jpg",
-  "../../assets/drawings.jpg",
+  Engine,
+  Engine2,
+  cad,
+  bridge,
+  chem_plant,
+  road,
+  Robot,
+  train,
+  rocket,
+  networks,
+  tunnel,
+  motor,
+  mechatronics,
 ];
 
 export default function Carousel() {
@@ -22,7 +43,7 @@ export default function Carousel() {
       className="rounded-2xl shadow-xl relative w-full"
     >
       {/* Carousel wrapper */}
-      <div className="relative h-56 overflow-hidden md:h-96">
+      <div className="relative h-70 overflow-hidden md:h-96">
         {slides.map((src, index) => (
           <div
             key={src}

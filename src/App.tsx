@@ -6,7 +6,7 @@ import Streams from "./components/Pages/streams";
 import Contact from "./components/Pages/contact";
 import NavBars from "./components/std/navbars";
 import Footer from "./components/std/footer";
-import Accordion from "./components/ui/accordion";
+
 import {
   HashRouter as Router,
   Routes,
@@ -35,7 +35,6 @@ function App() {
         {/* if routes dont exist brings them home */}
         <Route path="*" element={<Home />} />
       </Routes>
-      <Accordion />
       <Footer />
     </Router>
   );

@@ -1,6 +1,6 @@
-import drawings from "../imgs/drawings.jpg";
+import drawings from "../../assets/drawings.jpg";
 import Button from "../ui/button";
-import Accordion from "../ui/accordion";
+
 import Toaster from "../ui/toaster";
 import Skeleton from "../ui/skeleton";
 import Dropdown from "../ui/dropdown";
@@ -15,7 +15,6 @@ function About() {
         <Button variant="danger" className="mt-4">
           Learn More
         </Button>
-        <Accordion />
         <Toaster></Toaster>
         <Skeleton></Skeleton>
         <Dropdown></Dropdown>

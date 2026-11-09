@@ -1,4 +1,4 @@
-// Skeleton.tsx
+// Skeleton.tsx make contend look like it is ther but it is not
 export default function Skeleton() {
   return (
     <div className="animate-pulse space-y-3">
