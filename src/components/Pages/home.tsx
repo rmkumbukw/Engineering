@@ -8,6 +8,7 @@ import Cards from "../ui/mat";
 import { Counter } from "../ui/mat";
 import motor from "../../assets/motor.jpg";
 import networks from "../../assets/networks.jpg";
+import PipeThicknessCalculator from "../Calcs/wallcalc";
 
 function Home() {
   return (
@@ -145,6 +146,10 @@ function Home() {
 
         <Mats />
         <Cards title="My Projects" count={5}></Cards>
+
+        <div className="min-h-screen bg-slate-100 p-6">
+          <PipeThicknessCalculator />
+        </div>
 
         <Counter />
       </div>
