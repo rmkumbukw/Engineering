@@ -2,6 +2,12 @@ import Card from "../ui/card";
 import Carousel from "../ui/carousel";
 import Dgs from "../../assets/drawings.jpg";
 import Accordion from "../ui/accordion";
+import ScrollReveal from "../ui/scrollReveal";
+import { Mats } from "../ui/mat";
+import Cards from "../ui/mat";
+import { Counter } from "../ui/mat";
+import motor from "../../assets/motor.jpg";
+import networks from "../../assets/networks.jpg";
 
 function Home() {
   return (
@@ -21,11 +27,9 @@ function Home() {
           </p>
         </div>
 
-        <h2 className="text-xl font-bold">Welcome</h2>
-
         <div className="flex flex-col ">
-          <div className=" ">
-            <p>
+          <div className=" p-7">
+            <p className="p-4">
               Four years of challenges, late nights, teamwork, and growth have
               brought us to this milestone. Together, we have designed, built,
               tested, learned, and pushed ourselves beyond what we thought
@@ -34,7 +38,7 @@ function Home() {
               journey.
             </p>
 
-            <p>
+            <p className="p-4">
               Four years of challenges, late nights, teamwork, and growth have
               brought us to this milestone. Together, we have designed, built,
               tested, learned, and pushed ourselves beyond what we thought
@@ -44,11 +48,11 @@ function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 p-8">
+          <div className="flex flex-col p-4 px-20">
             <a href="/about">
-              <Card className="shadow-xl">
-                <h2 className="text-xl font-bold text-center">Did you Know</h2>
+              <Card className="shadow-xl" title="Your Game">
                 <p className="text-center">Current Eng Projects</p>
+
                 <img
                   className="w-6 flex justify-center items-center mx-auto"
                   src={Dgs}
@@ -58,7 +62,30 @@ function Home() {
             </a>
           </div>
         </div>
+        <div className="space-y-20 p-10">
+          <ScrollReveal>
+            <h1 className="text-5xl font-bold">Welcome to My Website</h1>
+          </ScrollReveal>
 
+          <ScrollReveal direction="left">
+            <p className="text-xl">This paragraph slides in from the left.</p>
+          </ScrollReveal>
+
+          <ScrollReveal direction="right" delay={200}>
+            <img
+              src="/images/engine.jpg"
+              className="w-full rounded-xl"
+              alt="Engine"
+            />
+          </ScrollReveal>
+
+          <ScrollReveal direction="up" delay={300}>
+            <div className="rounded-xl bg-gray-100 p-10">
+              <h2 className="text-3xl font-bold">My Projects</h2>
+              <p>Explore my engineering projects.</p>
+            </div>
+          </ScrollReveal>
+        </div>
         <h2 className="text-xl font-bold">Applying My NewSkills</h2>
         <div className="grid grid-cols-1 gap-4 my-15 md:grid-cols-2">
           <div className="...">
@@ -94,11 +121,32 @@ function Home() {
             />
           </div>
         </div>
+        <div className="grid grid-cols-1 gap-4 my-15 md:grid-cols-4">
+          <Card className="shadow-xl" title="Moto Master" age={22} dwg={motor}>
+            <p>This is a simple card component.</p>
+          </Card>
 
-        <Card className="shadow-xl">
-          <h2 className="text-xl font-bold">Welcome to the Home Page</h2>
-          <p>This is a simple card component.</p>
-        </Card>
+          <Card className="shadow-xl" title="Moto Master" age={22} dwg={motor}>
+            <p>This is a simple card component.</p>
+          </Card>
+          <Card className="shadow-xl" title="Networks" age={33} dwg={networks}>
+            <p>This is a simple card component.</p>
+          </Card>
+          <Card className="shadow-xl" title="Moto Master" age={22} dwg={motor}>
+            <p>This is a simple card component.</p>
+          </Card>
+          <Card className="shadow-xl" title="Moto Master" age={22} dwg={motor}>
+            <p>This is a simple card component.</p>
+          </Card>
+          <Card className="shadow-xl" title="Moto Master" age={22} dwg={motor}>
+            <p>This is a simple card component.</p>
+          </Card>
+        </div>
+
+        <Mats />
+        <Cards title="My Projects" count={5}></Cards>
+
+        <Counter />
       </div>
     </div>
   );

@@ -47,7 +47,7 @@ export default function Carousel() {
         {slides.map((src, index) => (
           <div
             key={src}
-            className={`absolute inset-0 duration-700 ease-in-out ${
+            className={`absolute inset-0 duration-1000 ease-in-out ${
               index === current
                 ? "opacity-100"
                 : "opacity-0 pointer-events-none"
@@ -55,7 +55,7 @@ export default function Carousel() {
           >
             <img
               src={src}
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute block w-full -translate-x-1/2 -translate-y-1/2  top-1/2 left-1/2"
               alt={`Slide ${index + 1}`}
             />
           </div>
@@ -128,7 +128,7 @@ export default function Carousel() {
               d="m9 5 7 7-7 7"
             />
           </svg>
-          <span className="sr-only">Next plEASE</span>
+          <span className="sr-only">Next Please</span>
         </span>
       </button>
     </div>

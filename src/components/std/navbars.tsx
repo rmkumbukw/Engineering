@@ -10,15 +10,23 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link to="/">Eng Basics</Link>
+          <Link to="/" className="text-white text-2xl font-bold ">
+            Eng Basics
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden items-center gap-8 md:flex">
-            <Link to="/home" className="transition hover:text-blue-600">
+            <Link
+              to="/home"
+              className="transition hover:text-blue-600 text-white"
+            >
               Home
             </Link>
 
-            <Link to="/about" className="transition hover:text-blue-600">
+            <Link
+              to="/about"
+              className="transition hover:text-blue-600 text-white"
+            >
               About
             </Link>
 
@@ -28,7 +36,7 @@ export default function Navbar() {
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button className="flex items-center gap-1 transition hover:text-blue-600">
+              <button className="flex items-center gap-1 transition hover:text-blue-600 text-white">
                 Streams
                 <svg
                   className={`h-4 w-4 transition-transform ${
@@ -76,7 +84,10 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link to="/tools" className="transition hover:text-blue-600">
+            <Link
+              to="/tools"
+              className="transition hover:text-blue-600 text-white"
+            >
               Tools
             </Link>
 

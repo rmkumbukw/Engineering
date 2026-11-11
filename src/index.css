@@ -3,13 +3,17 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-background: #bdc3c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #FFFFFF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #142B45, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #142B45, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background-attachment: fixed; 
+background-size: cover;
+ background-position: center;  
 
 }
 .bg-white {
-  background-color: #5f7c88;
+  background-color: #142B45;
 }
 
 .embla__viewport {
